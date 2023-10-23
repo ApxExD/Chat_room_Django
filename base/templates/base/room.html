@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    {% include 'navbar.html' %}
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+{% block content %}
+
+<!--<form class="position-fixed border border-3-->
+<!--            border-top-0-->
+<!--            border-start-0-->
+<!--            border-primary-subtle" style="width: 50%">-->
+
+<h1 class="position-fixed  start-50 translate-middle me-5 pt-5 ">{{room.name}}</h1>
+<div class="position-fixed top-50 start-50 translate-middle
+             border-0"
+            style="height:80%; width:70%;">
+<form class="position-fixed top-50 start-50 translate-middle
+            border border-3 border-primary-subtle rounded-3 px-3 py-3"
+            style="height:85%; width:50%; overflow-y: auto; background-color: #b4fff2" >
+
+    {% for messages in room_message %}
+
+           <small>Author: {{messages.user}} {{messages.created|timesince}} ago</small>
+                            <p>{{messages.body}}</p>
+            {% if request.user == messages.user %}
+            <a href="{% url 'delete_message' messages.id %}">Delete</a>
+            {% endif %}
+
+            <hr>
+    {% endfor %}
+
+</form>
+<div>
+        <p></p>
+        <form method="POST">
+        {% csrf_token %}
+        <input type="text"  class="position-fixed bottom-0 start-50 translate-middle-x p-2"
+               style="width:50%;"  name="body" placeholder="Write your message here...">
+        </form>
+
+    </div>
+    </div>
+
+
+
+{% endblock content %}
+</body>
+</html>

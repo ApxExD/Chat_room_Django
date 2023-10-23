@@ -1,0 +1,26 @@
+    {% load static %}
+ {% include 'navbar.html' %}
+
+    <title>Login</title>
+    
+</body>
+</html>
+<div>
+<form method="POST" action="">
+{% csrf_token %}
+    <input type="text" name="username" placeholder="Username" />
+    <br>
+    <input type="password" name="password" placeholder="Password" />
+    <br>
+    <input type="submit" value="Login"/>
+</form>
+</div>
+<div>
+    <p>Haven`t registered yet?
+        <a href="{% url 'user_registration' %}">Sign up</a>
+    </p>
+</div>
+
+
+
+
