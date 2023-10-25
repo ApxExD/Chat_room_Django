@@ -8,20 +8,26 @@ Djangoフレームワーク、基本的なHTML、Bootstrap v5を使った簡単�
 
 1.Login page:
 
-![Login](https://github.com/ApxExD/Chat_room_Django/assets/80266920/74ee0f9e-5072-497a-8f53-dc3bde43ae75)
+![login_page](https://github.com/ApxExD/Chat_room_Django/assets/80266920/2b55e72d-93c2-4f2b-9f94-aa4c9d439807)
+
 
 2. Registration page:
 
-![Registration](https://github.com/ApxExD/Chat_room_Django/assets/80266920/5f2e274b-a118-40de-80fd-3bcff7d67727)
+![registration](https://github.com/ApxExD/Chat_room_Django/assets/80266920/c7063642-4794-4aab-8776-0d27ec926918)
+
 
 3. Chat room:
-![Message_room](https://github.com/ApxExD/Chat_room_Django/assets/80266920/dfad01df-6ce1-41ed-b0e2-d97f5e041806)
+   
+![room](https://github.com/ApxExD/Chat_room_Django/assets/80266920/b7498d70-b419-464f-95cc-4fed384361ce)
+
 
 4. Main page:
-![Main_page](https://github.com/ApxExD/Chat_room_Django/assets/80266920/6d405311-d248-4c5f-bde3-f7223ed200b2)
+   
+![main_page](https://github.com/ApxExD/Chat_room_Django/assets/80266920/dcc576eb-1320-413d-b691-3d022958d9b4)
+
 
 5. Delete room:
-![Delete_room](https://github.com/ApxExD/Chat_room_Django/assets/80266920/9c6c70a3-d521-417c-bdfd-7cdb3f8fde04)
 
+![delete_room](https://github.com/ApxExD/Chat_room_Django/assets/80266920/f393d897-7495-4425-bf7e-44b2216c6b58)
    
    
